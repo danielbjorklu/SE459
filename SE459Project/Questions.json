@@ -1,0 +1,17 @@
+{"questions":[ 
+	{"index":1, "question":"The Mexican city of Tijuana borders what U.S. city?", "category":"U.S. Tivia"},
+	{"index":2, "question":"The Hoover Dam is built on what river?", "category":"U.S. Tivia"},
+	{"index":3, "question":"Who invented the lightning rod?", "category":"U.S. Tivia"},
+	{"index":4, "question":"What document did the U.S. Constitution replace?", "category":"U.S. Tivia"},
+	{"index":5, "question":"What do the letters 'ZIP' stand for in the U.S. postal code?", "category":"U.S. Trivia"},
+	{"index":6, "question":"What do the letters 'SCUBA' stand for?", "category":"Sports Trivia"},
+	{"index":7, "question":"Who is the only head basketball coach to win an NCAA and NBA championship?", "category":"Sports Trivia"},
+	{"index":8, "question":"What is the most common thrown pitch in baseball?", "category":"Sports Trivia"},
+	{"index":9, "question":"What are the 'Original Six' NHL teams?", "category":"Sports Trivia"},
+	{"index":10, "question":"What's Major League Baseball's all-time home run record?", "category":"Sports Trivia"},
+	{"index":11, "question":"What does HTTP stand for?", "category":"Technology Trivia"},
+	{"index":12, "question":"Who invented Bitcoin?", "category":"Technology Trivia"},
+	{"index":13, "question":"What does ROM stand for?", "category":"Technology Trivia"},
+	{"index":14, "question":"At what company was the first electronic camera created?", "category":"Technology Trivia"},
+	{"index":15, "question":"What do the letters 'RGB' stand for?", "category":"Technology Trivia"}
+]}
