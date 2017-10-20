@@ -73,6 +73,7 @@ public class GameManager {
 
 	private static void playEngine(boolean play) {
 		while (play) {
+			LOG.debug("Playing game.");
 			System.out.println();
 			System.out.println(GameDialogue.POINT_TOTAL + pointTotal);
 			System.out.println();
