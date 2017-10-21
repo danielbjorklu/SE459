@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>QAGreatness</name>
   <build>
+  	<defaultGoal>package</defaultGoal>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>

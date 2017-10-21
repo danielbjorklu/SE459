@@ -34,3 +34,51 @@
 [INFO ] 2017-10-20 12:35:19:315 [main] GameManager - Adding answers to the game.
 [INFO ] 2017-10-20 12:35:19:315 [main] GameManager - Starting game engine.
 [DEBUG] 2017-10-20 12:35:19:315 [main] GameManager - Writing welcome message.
+[INFO ] 2017-10-20 18:37:29:924 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
+[INFO ] 2017-10-20 18:37:29:929 [main] GameManager - Adding questions to the game.
+[INFO ] 2017-10-20 18:37:29:931 [main] GameManager - Adding answers to the game.
+[INFO ] 2017-10-20 18:37:29:932 [main] GameManager - Starting game engine.
+[DEBUG] 2017-10-20 18:37:29:932 [main] GameManager - Writing welcome message.
+[DEBUG] 2017-10-20 18:39:39:263 [main] GameManager - 1
+[DEBUG] 2017-10-20 18:39:45:023 [main] GameManager - Is the submitted answer correct: false
+[DEBUG] 2017-10-20 18:39:45:023 [main] GameManager - Is the submitted answer the correct size: false
+[INFO ] 2017-10-20 19:08:11:889 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:890 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:892 [main] Question - Parsing questions
+[INFO ] 2017-10-20 19:08:11:892 [main] GameManager - Adding questions to the game.
+[INFO ] 2017-10-20 19:08:11:893 [main] GameManager - Adding answers to the game.
+[INFO ] 2017-10-20 19:08:11:893 [main] GameManager - Starting game engine.
+[DEBUG] 2017-10-20 19:08:11:893 [main] GameManager - Writing welcome message.
+[DEBUG] 2017-10-20 19:08:18:901 [main] GameManager - 1
+[DEBUG] 2017-10-20 19:08:21:840 [main] GameManager - Is the submitted answer correct: true
+[DEBUG] 2017-10-20 19:08:21:841 [main] GameManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-10-20 19:08:26:917 [main] GameManager - Starting game over.
+[DEBUG] 2017-10-20 19:08:30:308 [main] GameManager - 7
+[DEBUG] 2017-10-20 19:08:38:376 [main] GameManager - Is the submitted answer correct: false
+[DEBUG] 2017-10-20 19:08:38:377 [main] GameManager - Is the submitted answer the correct size: true

@@ -13,8 +13,8 @@ import com.answers.Answer;
 import com.answers.Answers;
 import com.questions.Question;
 import com.questions.Questions;
-import com.utility.Constants;
 import com.utility.FileParser;
+import com.utility.game.GameConstants;
 import com.utility.game.GameDialogue;
 
 /**
@@ -55,10 +55,10 @@ public class GameManager {
 		pointTotal = 0;
 		playAgain = true;
 		
-		questions = FileParser.getQuestionInfo(Constants.QUESTION_PATH, "questions");
+		questions = FileParser.getQuestionInfo(GameConstants.QUESTION_PATH, "questions");
 		LOG.info("Adding questions to the game.");
 		
-		answers = FileParser.getAnswerInfo(Constants.ANSWER_PATH, "answers");
+		answers = FileParser.getAnswerInfo(GameConstants.ANSWER_PATH, "answers");
 		LOG.info("Adding answers to the game.");
 
 		LOG.info("Starting game engine.");
@@ -73,7 +73,6 @@ public class GameManager {
 
 	private static void playEngine(boolean play) {
 		while (play) {
-			LOG.debug("Playing game.");
 			System.out.println();
 			System.out.println(GameDialogue.POINT_TOTAL + pointTotal);
 			System.out.println();
@@ -91,10 +90,10 @@ public class GameManager {
 
 			answerChecker(questionAnswer);
 			
-			if (!isHint && hint.toLowerCase().equals(Constants.YES)) {
+			if (!isHint && hint.toLowerCase().equals(GameConstants.YES)) {
 				
 				hint();
-				System.out.println(Constants.NEW_LINE + GameDialogue.ANSWER_CHOICE);
+				System.out.println(GameConstants.NEW_LINE + GameDialogue.ANSWER_CHOICE);
 
 				scanner = new Scanner(System.in);
 				questionAnswer = scanner.nextLine();
@@ -104,7 +103,7 @@ public class GameManager {
 				
 				scanner = new Scanner(System.in);
 				questionAnswer = scanner.nextLine();
-				if (questionAnswer.toLowerCase().equals(Constants.YES)) {
+				if (questionAnswer.toLowerCase().equals(GameConstants.YES)) {
 					LOG.debug("Player {} has chosen to quit the game.", "NEED_TO_FIX");
 					close();
 				} else {
@@ -149,25 +148,25 @@ public class GameManager {
 		LOG.debug("Is the submitted answer correct: {}", isCorrect);
 		
 		boolean isCorrectLength = 
-				answer.getAnswer().replaceAll(Constants.WHITESPACE, Constants.EMPTY_CHAR).length() == 
-				answerEntered.replaceAll(Constants.WHITESPACE, Constants.EMPTY_CHAR).length();
+				answer.getAnswer().replaceAll(GameConstants.WHITESPACE, GameConstants.EMPTY_CHAR).length() == 
+				answerEntered.replaceAll(GameConstants.WHITESPACE, GameConstants.EMPTY_CHAR).length();
 		LOG.debug("Is the submitted answer the correct size: {}", isCorrectLength);
 		
 		if (isCorrect && isCorrectLength) {
 			isHint = true;
 			LOG.info("Correct answer entered.");
-			System.out.println(Constants.NEW_LINE + GameDialogue.YOUR_ANSWER);
+			System.out.println(GameConstants.NEW_LINE + GameDialogue.YOUR_ANSWER);
 				
 			pointTotal += weight;
 			LOG.info("Awarding {} points.", weight);
 			LOG.debug("Player {} has amassed {} points, exiting.", "NEED_TO_ADD", pointTotal);
-			System.out.println(Constants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal);
+			System.out.println(GameConstants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal);
 			return;
 		} 
 		if (!isCorrect || !isCorrectLength) {
 			isHint = false;
 			
-			System.out.println(Constants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + Constants.NEW_LINE);
+			System.out.println(GameConstants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + GameConstants.NEW_LINE);
 			System.out.println(GameDialogue.HINT_MSG);
 
 			scanner = new Scanner(System.in);
@@ -183,7 +182,7 @@ public class GameManager {
 		}
 		if (!answer.getAnswer().toLowerCase().contains(questionAnswer.toLowerCase())) {
 			isHint = false;
-			System.out.println(Constants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + Constants.NEW_LINE);
+			System.out.println(GameConstants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + GameConstants.NEW_LINE);
 			
 			System.out.println(GameDialogue.HINT_MSG);
 			
@@ -196,15 +195,15 @@ public class GameManager {
 				
 				scanner = new Scanner(System.in);
 				pleaseContinue = scanner.nextLine();
-				if (pleaseContinue.matches(Constants.LETTERS) && pleaseContinue.toLowerCase().equals(Constants.YES)) {
+				if (pleaseContinue.matches(GameConstants.LETTERS) && pleaseContinue.toLowerCase().equals(GameConstants.YES)) {
 					return;
 				} else {
 					close();
 				}
 			}
-			if (hint.toLowerCase().equals(Constants.YES) && weight > 0) {
+			if (hint.toLowerCase().equals(GameConstants.YES) && weight > 0) {
 				weight -= 1;
-				System.out.println(Constants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + Constants.NEW_LINE);
+				System.out.println(GameConstants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + GameConstants.NEW_LINE);
 				hint();
 			} else {
 				System.out.println(GameDialogue.CONTINUE_PLAY);
@@ -212,8 +211,8 @@ public class GameManager {
 				scanner = new Scanner(System.in);
 				pleaseContinue = scanner.nextLine();
 				
-				if (pleaseContinue.matches(Constants.LETTERS) && pleaseContinue.toLowerCase().equals(Constants.YES)) {
-					System.out.println(Constants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal + Constants.NEW_LINE );
+				if (pleaseContinue.matches(GameConstants.LETTERS) && pleaseContinue.toLowerCase().equals(GameConstants.YES)) {
+					System.out.println(GameConstants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal + GameConstants.NEW_LINE );
 					return;
 				} else { 
 					close();
@@ -223,7 +222,7 @@ public class GameManager {
 	}
 	
 	private static void hint() {
-		System.out.println(Constants.NEW_LINE + answer.getAnswerHint());
+		System.out.println(GameConstants.NEW_LINE + answer.getAnswerHint());
 	}
 	
 	private static void close() {

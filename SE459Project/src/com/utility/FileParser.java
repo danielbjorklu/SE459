@@ -3,6 +3,9 @@
  */
 package com.utility;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,12 +18,15 @@ import com.answers.Answer;
 import com.answers.Answers;
 import com.questions.Question;
 import com.questions.Questions;
+import com.utility.game.GameConstants;
 
 /**
  * @author olamcdaniel
  *
  */
 public class FileParser {
+	private static final Logger LOG = LogManager.getLogger(FileParser.class);
+	
 	private static ArrayList<Answers> answersList = new ArrayList<>();
 	private static ArrayList<Questions> questionsList = new ArrayList<>();
 	private static JSONParser parser = null;
@@ -37,6 +43,7 @@ public class FileParser {
 	public static ArrayList<Questions> getQuestionInfo(String fileName, String type) {
 		parser = new JSONParser();
 		
+		LOG.trace("Parsing questions.");
 		if (fileName != null && type != null) {
 			try{
 				object = parser.parse(new FileReader(fileName));
@@ -46,21 +53,21 @@ public class FileParser {
 				Iterator<?> jsonIterator = jsonArray.iterator();
 				while(jsonIterator.hasNext()) {
 					JSONObject jObj = (JSONObject) jsonIterator.next();
-					if (jObj.containsKey(Constants.INDEX)) {
+					if (jObj.containsKey(GameConstants.INDEX)) {
 						
 						if (type.equals("questions")) {
 							
-							int index = Converter.convertInteger(jObj.get(Constants.INDEX));
-							String question = Converter.convertString(jObj.get(Constants.QUESTION));
-							String category = Converter.convertString(jObj.get(Constants.CATEGORY));
+							int index = Converter.convertInteger(jObj.get(GameConstants.INDEX));
+							String question = Converter.convertString(jObj.get(GameConstants.QUESTION));
+							String category = Converter.convertString(jObj.get(GameConstants.CATEGORY));
 							
 							questionsList.add(new Question(index, question, category));
 						}
 					}	
 				}
 			} catch (Exception e) {
-				// TODO: handle exceptions better
-				System.out.println(e.getMessage());
+				
+				LOG.error("Error parsing Questions.json file. Message: {}", e.getMessage());
 			}
 		}
 		return questionsList;
@@ -75,6 +82,7 @@ public class FileParser {
 	public static ArrayList<Answers> getAnswerInfo(String fileName, String type) {
 		parser = new JSONParser();
 		
+		LOG.trace("Parsing answers.");
 		if (fileName != null && type != null) {
 			try{
 				object = parser.parse(new FileReader(fileName));
@@ -84,22 +92,21 @@ public class FileParser {
 				Iterator<?> jsonIterator = jsonArray.iterator();
 				while(jsonIterator.hasNext()) {
 					JSONObject jObj = (JSONObject) jsonIterator.next();
-					if (jObj.containsKey(Constants.INDEX)) {
+					if (jObj.containsKey(GameConstants.INDEX)) {
 						
 						if (type.equals("answers")) {
 							
-							int index = Converter.convertInteger(jObj.get(Constants.INDEX));
-							String answer = Converter.convertString(jObj.get(Constants.ANSWER));
-							int weight = Converter.convertInteger(jObj.get(Constants.WEIGHT));
-							String hint = Converter.convertString(jObj.get(Constants.HINT));
+							int index = Converter.convertInteger(jObj.get(GameConstants.INDEX));
+							String answer = Converter.convertString(jObj.get(GameConstants.ANSWER));
+							int weight = Converter.convertInteger(jObj.get(GameConstants.WEIGHT));
+							String hint = Converter.convertString(jObj.get(GameConstants.HINT));
 							
 							answersList.add(new Answer(index, answer, weight, hint));
 						}
 					}	
 				}
 			} catch (Exception e) {
-				//TODO: we need to figure out a way to better handle exceptions
-				System.out.println(e.getMessage());
+				LOG.error("Error parsing Answers.json file. Message: {}", e.getMessage());
 			}
 		}
 		return answersList;

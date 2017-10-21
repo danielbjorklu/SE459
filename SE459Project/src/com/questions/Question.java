@@ -3,17 +3,12 @@
  */
 package com.questions;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 /**
  * @author olamcdaniel
  *
  */
 public class Question implements Questions {
 
-	private static Logger LOG = LogManager.getLogger(Question.class);
-	
-	
 	private String question;
 	private String category;
 	private int index;
@@ -22,8 +17,6 @@ public class Question implements Questions {
 		this.index = index;
 		this.question = question;
 		this.category = category;
-
-		LOG.info("Parsing questions");
 	}
 	@Override
 	public String getQuestion() {
