@@ -3,7 +3,8 @@
  */
 package com.manager;
 
-import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.logging.log4j.Logger;
@@ -27,23 +28,24 @@ public class GameManager {
 	
 	static Answer answer;
 	static Question question;
-
-	static ArrayList<Questions> questions;
-	static ArrayList<Answers> answers;
+	
+	static Map<Integer, Questions> questions;
+	static Map<Integer, Answers> answers;
 	
 	static int pointTotal;
 	static int questionChoice;
 	static int weight;
+	static int idx;
 	
 	static String questionAnswer;	
 	static String hint;
-	
 	
 	static Scanner scanner;
 	
 	static boolean isHint;
 	static boolean playAgain;
-
+	static boolean isGameOver;
+	
 	/**
 	 * Temporary method to test game functionality.
 	 * 
@@ -61,7 +63,6 @@ public class GameManager {
 		answers = FileParser.getAnswerInfo(GameConstants.ANSWER_PATH, "answers");
 		LOG.info("Adding answers to the game.");
 
-		LOG.info("Starting game engine.");
 		welcome();	
 		playEngine(playAgain);
 	}
@@ -72,74 +73,134 @@ public class GameManager {
 	}
 
 	private static void playEngine(boolean play) {
+		
+		LOG.info("Starting game engine.");
 		while (play) {
-			System.out.println();
-			System.out.println(GameDialogue.POINT_TOTAL + pointTotal);
-			System.out.println();
-			System.out.println("Please choose a number :");
-			questionChoice = scanner.nextInt();
 			
-			choiceChecker(questionChoice);
-			LOG.debug(questionChoice);
+			showPointTotal();
 			
-			System.out.println(question.getQuestion());
-			System.out.println(GameDialogue.ANSWER_CHOICE);
+			System.out.println(GameDialogue.NUMBER_CHOICE);
 
-			scanner = new Scanner(System.in);
-			questionAnswer = scanner.nextLine();
-
-			answerChecker(questionAnswer);
+			getQuestion(intScannerIn(questionChoice));
+			 
+			checkAnswer(stringScannerIn(questionAnswer));
 			
 			if (!isHint && hint.toLowerCase().equals(GameConstants.YES)) {
 				
-				hint();
-				System.out.println(GameConstants.NEW_LINE + GameDialogue.ANSWER_CHOICE);
+				getHint();
+				System.out.println(
+						GameConstants.NEW_LINE + 
+						GameDialogue.ANSWER_CHOICE +
+						GameConstants.NEW_LINE
+						);
 
-				scanner = new Scanner(System.in);
-				questionAnswer = scanner.nextLine();
-				answerHintChecker(questionAnswer, weight);
+				checkHintAnswer(stringScannerIn(questionAnswer), weight);
 			} else {
 				System.out.println(GameDialogue.QUIT);
-				
-				scanner = new Scanner(System.in);
-				questionAnswer = scanner.nextLine();
-				if (questionAnswer.toLowerCase().equals(GameConstants.YES)) {
-					LOG.debug("Player {} has chosen to quit the game.", "NEED_TO_FIX");
-					close();
+				continuePlaying(stringScannerIn(questionAnswer));
+				if (isGameOver) {
+					exitGame();
 				} else {
-					LOG.debug("Starting game over.");
 					playEngine(play);
 				}
 			}
 		}
 	}
+
+	/**
+	 * 
+	 */
+	private static void continuePlaying(String qAnswer) {
+		if (qAnswer.toLowerCase().equals(GameConstants.YES)) {
+			LOG.debug("Player {} has chosen to quit the game.", "NEED_TO_FIX");
+			isGameOver = true;
+		} else if (qAnswer.toLowerCase().equals(GameConstants.NO)){
+			LOG.debug("Starting game over.");
+			System.out.println(GameConstants.NEW_LINE + "Setting up next round..." + GameConstants.NEW_LINE);
+			isGameOver = false;
+		} else {
+			System.out.println(questionAnswer + " isn't an option.  Please try again");
+			continuePlaying(stringScannerIn(questionAnswer));
+		}
+	}
+
+	/**
+	 * 
+	 */
+	private static void showPointTotal() {
+		if (pointTotal == 1) {
+			System.out.println(
+					GameConstants.NEW_LINE 
+					+ GameDialogue.POINT_TOTAL 
+					+ pointTotal 
+					+ GameDialogue.POINT
+					+ GameConstants.NEW_LINE
+					);
+		} else {
+			System.out.println(
+					GameConstants.NEW_LINE 
+					+ GameDialogue.POINT_TOTAL 
+					+ pointTotal 
+					+ GameDialogue.POINTS
+					+ GameConstants.NEW_LINE
+					);
+		}
+	}
+
+	/**
+	 * 
+	 */
+	private static String stringScannerIn(String in) {
+		try {
+			scanner = new Scanner(System.in);
+			in = scanner.nextLine();
+		} catch (InputMismatchException ime) {
+			LOG.error("Player {} entered an incorrect value. Message: {}", "NEED_TO_IMPLEMENT", ime.getMessage());
+			System.out.println("Please only enter letters.");
+		}
+		return in;
+	}
+
+	/**
+	 * 
+	 */
+	private static int intScannerIn(int in) {
+		try {
+			scanner = new Scanner(System.in);
+			in = scanner.nextInt();
+		} catch (InputMismatchException ime) {
+			LOG.error("Player {} entered an incorrect value. Message: {}", "NEED_TO_IMPLEMENT", ime.getMessage());
+			System.out.println("Please only enter numbers.");
+			
+		}
+		return in;
+	}
 	
-	private static void choiceChecker(int answerEntered) {
+	private static void getQuestion(int answerEntered) {
 		
 		if (answerEntered > questions.size()) {
-			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
-			
-			scanner = new Scanner(System.in);
-			answerEntered = scanner.nextInt();
-		} 
-		if (answerEntered < 0) {
-			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
+			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);			
+			getQuestion(intScannerIn(questionChoice));
 
-			scanner = new Scanner(System.in);
-			answerEntered = scanner.nextInt();
-		}
-		if (answerEntered == questions.size()) {
-			question = (Question) questions.get(answerEntered - 1);
-			answer = (Answer) answers.get(answerEntered - 1);
-			weight = answer.getAnswerWeight();
+			//isEntryValid = false;
+		} 
+		if (answerEntered <= 0) {
+			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
+			getQuestion(intScannerIn(questionChoice));
+
 		} else {
+			System.out.println("Setting up question..." + GameConstants.NEW_LINE);
 			question = (Question) questions.get(answerEntered);
 			answer = (Answer) answers.get(answerEntered);
 			weight = answer.getAnswerWeight();
+			
+			System.out.println(question.getQuestion());
+			System.out.println(GameDialogue.ANSWER_CHOICE);
+
 		}
 	}
 	
-	private static void answerChecker(String answerEntered) {
+	private static void checkAnswer(String answerEntered) {
 		
 		isHint = false;
 		boolean isCorrect = 
@@ -154,13 +215,15 @@ public class GameManager {
 		
 		if (isCorrect && isCorrectLength) {
 			isHint = true;
+
 			LOG.info("Correct answer entered.");
 			System.out.println(GameConstants.NEW_LINE + GameDialogue.YOUR_ANSWER);
 				
 			pointTotal += weight;
 			LOG.info("Awarding {} points.", weight);
 			LOG.debug("Player {} has amassed {} points, exiting.", "NEED_TO_ADD", pointTotal);
-			System.out.println(GameConstants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal);
+			showPointTotal();
+			// need facility to remove the question from gameplay
 			return;
 		} 
 		if (!isCorrect || !isCorrectLength) {
@@ -174,61 +237,84 @@ public class GameManager {
 		}
 	}
 	
-	private static void answerHintChecker(String questionAnswer, int weight) {
-		String pleaseContinue;
-		weight -= 1;
-		if (weight <= 1) {
+	private static void getHint() {
+		System.out.println(GameConstants.NEW_LINE + answer.getAnswerHint());
+	}
+	
+	private static void checkHintAnswer(String questionAnswer, int weight) {
+		String pleaseContinue = null;
+		
+		if (weight == 1) {
 			System.out.println(GameDialogue.HINT_WARNING);
 		}
+		
+		
 		if (!answer.getAnswer().toLowerCase().contains(questionAnswer.toLowerCase())) {
 			isHint = false;
 			System.out.println(GameConstants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + GameConstants.NEW_LINE);
 			
 			System.out.println(GameDialogue.HINT_MSG);
 			
-			scanner = new Scanner(System.in);
-			hint = scanner.nextLine();
-			
-			if (weight == 0) {
-				
-				System.out.println(GameDialogue.HINT_PNTS_MSG);
-				
-				scanner = new Scanner(System.in);
-				pleaseContinue = scanner.nextLine();
-				if (pleaseContinue.matches(GameConstants.LETTERS) && pleaseContinue.toLowerCase().equals(GameConstants.YES)) {
-					return;
-				} else {
-					close();
-				}
-			}
-			if (hint.toLowerCase().equals(GameConstants.YES) && weight > 0) {
+			if (stringScannerIn(hint).toLowerCase().equals(GameConstants.YES) && weight > 0) {
 				weight -= 1;
 				System.out.println(GameConstants.NEW_LINE + GameDialogue.POINTS_REMAINING + weight + GameConstants.NEW_LINE);
-				hint();
-			} else {
-				System.out.println(GameDialogue.CONTINUE_PLAY);
-				
-				scanner = new Scanner(System.in);
-				pleaseContinue = scanner.nextLine();
-				
-				if (pleaseContinue.matches(GameConstants.LETTERS) && pleaseContinue.toLowerCase().equals(GameConstants.YES)) {
-					System.out.println(GameConstants.NEW_LINE + GameDialogue.POINT_TOTAL + pointTotal + GameConstants.NEW_LINE );
-					return;
-				} else { 
-					close();
+				if (weight == 0) {
+						
+					System.out.println(GameDialogue.HINT_PNTS_MSG);
+					continuePlaying(stringScannerIn(pleaseContinue));
+					
+					if (isGameOver) {
+						exitGame();
+					} else {
+						playEngine(true);
+					}
+				} else {
+					String hintAnswer = null;
+					if (weight == 1) {
+						System.out.println(GameDialogue.HINT_WARNING);
+					}
+					getHint();
+					checkHintAnswer(stringScannerIn(hintAnswer), weight);
 				}
+				
+			} else {
+				continuePlaying(stringScannerIn(pleaseContinue));
+				if (isGameOver) {
+					exitGame();
+				} else {
+					playEngine(true);
+				}
+			}
+		} else {
+			pointTotal += weight;
+			System.out.println(GameDialogue.YOUR_ANSWER + GameConstants.NEW_LINE);
+			if (weight == 1) {
+				System.out.println("You recieved " + weight + " point out of a possible " + answer.getAnswerWeight() + " available points.");
+			} else {
+				System.out.println("You recieved " + weight + " points out of a possible " + answer.getAnswerWeight() + " available points.");
+			}
+			
+			System.out.println(GameDialogue.CONTINUE_PLAY);
+			
+			continuePlaying(stringScannerIn(pleaseContinue));
+			if (isGameOver) {
+				exitGame();
+			} else {
+				playEngine(true);
 			}
 		}	
 	}
 	
-	private static void hint() {
-		System.out.println(GameConstants.NEW_LINE + answer.getAnswerHint());
-	}
-	
-	private static void close() {
+	private static void exitGame() {
 		scanner.close();
 		playAgain = false;
-		System.out.println(GameDialogue.TOTAL_POINTS + pointTotal);
+		
+		if (pointTotal == 1) {
+			System.out.println(GameDialogue.FINAL_POINT_TOTAL + pointTotal + GameDialogue.POINT);
+		} else {
+			System.out.println(GameDialogue.FINAL_POINT_TOTAL + pointTotal + GameDialogue.POINTS);
+		}
+		
 		System.exit(1);
 	}
 }

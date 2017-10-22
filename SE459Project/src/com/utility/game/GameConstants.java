@@ -6,7 +6,7 @@ package com.utility.game;
 import java.io.File;
 
 /**
- * @author omcda
+ * @author olamcdaniel
  *
  */
 public class GameConstants {
@@ -42,14 +42,14 @@ public class GameConstants {
 	 *  Regular Expressions
 	 */
 	// any non-word character
-	public static final String SPECIAL_CHARS = "[^\\W]";
-	public static final String LETTERS = "[a-zA-Z]";
+	public static final String SPECIAL_CHARS = "[^\\W]+";
+	public static final String LETTERS = "[a-zA-Z]+";
 	// [a-zA-z_0-9]
-	public static final String WORD_CHAR = "\\w";
+	public static final String WORD_CHAR = "\\w+";
 	// [0-9]
-	public static final String NUMBERS = "\\d";
+	public static final String NUMBERS = "\\d+";
 	// whitespace
-	public static final String WHITESPACE = "\\s";
+	public static final String WHITESPACE = "\\s+";
 	// new line
 	public static final String NEW_LINE = "\n";
 }

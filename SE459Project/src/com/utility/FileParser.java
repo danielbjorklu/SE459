@@ -7,8 +7,10 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import java.io.FileReader;
-import java.util.ArrayList;
+
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -26,9 +28,10 @@ import com.utility.game.GameConstants;
  */
 public class FileParser {
 	private static final Logger LOG = LogManager.getLogger(FileParser.class);
+
+	private static Map<Integer, Questions> questionMap = new HashMap<>();
+	private static Map<Integer, Answers> answerMap = new HashMap<>();
 	
-	private static ArrayList<Answers> answersList = new ArrayList<>();
-	private static ArrayList<Questions> questionsList = new ArrayList<>();
 	private static JSONParser parser = null;
 	private static JSONArray jsonArray = null;
 	private static JSONObject jsonObject = null;
@@ -40,7 +43,7 @@ public class FileParser {
 	 * @param type the key of the JSON array
 	 * @return the list questions with the associated data
 	 */
-	public static ArrayList<Questions> getQuestionInfo(String fileName, String type) {
+	public static Map<Integer, Questions> getQuestionInfo(String fileName, String type) {
 		parser = new JSONParser();
 		
 		LOG.trace("Parsing questions.");
@@ -61,7 +64,7 @@ public class FileParser {
 							String question = Converter.convertString(jObj.get(GameConstants.QUESTION));
 							String category = Converter.convertString(jObj.get(GameConstants.CATEGORY));
 							
-							questionsList.add(new Question(index, question, category));
+							questionMap.put(index, new Question(index, question, category));
 						}
 					}	
 				}
@@ -70,8 +73,9 @@ public class FileParser {
 				LOG.error("Error parsing Questions.json file. Message: {}", e.getMessage());
 			}
 		}
-		return questionsList;
+		return questionMap;
 	}
+
 	
 	/**
 	 * Process the answer data.
@@ -79,7 +83,7 @@ public class FileParser {
 	 * @param type the key of the JSON array
 	 * @return the list of answers with the associated data
 	 */
-	public static ArrayList<Answers> getAnswerInfo(String fileName, String type) {
+	public static Map<Integer, Answers> getAnswerInfo(String fileName, String type) {
 		parser = new JSONParser();
 		
 		LOG.trace("Parsing answers.");
@@ -101,7 +105,7 @@ public class FileParser {
 							int weight = Converter.convertInteger(jObj.get(GameConstants.WEIGHT));
 							String hint = Converter.convertString(jObj.get(GameConstants.HINT));
 							
-							answersList.add(new Answer(index, answer, weight, hint));
+							answerMap.put(index, new Answer(index, answer, weight, hint));
 						}
 					}	
 				}
@@ -109,6 +113,6 @@ public class FileParser {
 				LOG.error("Error parsing Answers.json file. Message: {}", e.getMessage());
 			}
 		}
-		return answersList;
+		return answerMap;
 	}
 }
