@@ -2,4 +2,4 @@
 language: java
 jdk:
   -oraclejdk8
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -D -V
+script: mvn clean verify
