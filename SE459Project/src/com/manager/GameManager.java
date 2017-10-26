@@ -8,10 +8,12 @@ import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 
 import com.answers.Answer;
 import com.answers.Answers;
+import com.player.tracker.PlayerTracker;
 import com.questions.Question;
 import com.questions.Questions;
 import com.utility.FileParser;
@@ -29,15 +31,19 @@ public class GameManager {
 	static Answer answer;
 	static Question question;
 	
+	static PlayerTracker playTracker;
+	
 	static Map<Integer, Questions> questions;
 	static Map<Integer, Answers> answers;
 	
 	static int pointTotal;
 	static int questionChoice;
+	static int teamChoice;
 	static int weight;
 	static int idx;
 	
 	static String questionAnswer;	
+	static String enteredName;
 	static String hint;
 	
 	static Scanner scanner;
@@ -64,12 +70,38 @@ public class GameManager {
 		LOG.info("Adding answers to the game.");
 
 		welcome();	
+		teamBuilder();
 		playEngine(playAgain);
 	}
 	
+	
+
 	private static void welcome() {
 		LOG.debug("Writing welcome message.");
 		System.out.println(GameDialogue.WELCOME_MSG);
+	}
+	
+	private static void teamBuilder() {
+		// get players or teams
+		// assign gameId
+		System.out.println("Please enter your name: ");
+		stringScannerIn(enteredName);
+		
+		
+		System.out.println("Hi " + enteredName);
+		System.out.println("You can play alone, against someone, or against a team. ");
+		System.out.println("Enter 1 for alone, 2 to play against someone, or 3 for a team based game: ");
+		
+		if (intScannerIn(teamChoice) == 1) {
+			playEngine(true);
+		} else if (intScannerIn(teamChoice) == 2) {
+			playEngine(true);
+		} else if (intScannerIn(teamChoice) == 3) {
+			playEngine(true);
+		} else {
+			playEngine(false);
+		}
+		
 	}
 
 	private static void playEngine(boolean play) {

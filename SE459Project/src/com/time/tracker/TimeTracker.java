@@ -18,4 +18,10 @@ import org.apache.logging.log4j.LogManager;
 public class TimeTracker extends Timer implements Time {
 	public static final Logger LOG = LogManager.getLogger(TimeTracker.class);
 
+	@Override
+	public void track() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

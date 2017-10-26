@@ -14,6 +14,12 @@ public class Answer implements Answers {
 	private int index;
 	private int weight;
 	
+	/**
+	 * @param index
+	 * @param answer
+	 * @param weight
+	 * @param hint
+	 */
 	public Answer (int index, String answer, int weight, String hint) {
 		this.index = index;
 		this.answer = answer;

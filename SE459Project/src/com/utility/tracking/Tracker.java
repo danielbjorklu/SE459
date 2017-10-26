@@ -4,9 +4,13 @@
 package com.utility.tracking;
 
 /**
- * @author omcda
+ * @author olamcdaniel
  *
  */
 public interface Tracker {
 
+	/**
+	 * Initiate tracking for intended object or reference.
+	 */
+	void track();
 }

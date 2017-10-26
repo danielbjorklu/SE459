@@ -1,84 +1,221 @@
-[INFO ] 2017-10-20 12:15:48:647 [main] GameManager - Adding questions to the game.
-[INFO ] 2017-10-20 12:15:48:649 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:15:48:649 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:15:48:649 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:25:17:948 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:25:17:963 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:25:17:963 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:25:17:963 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:26:38:215 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:26:38:253 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:26:38:253 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:26:38:253 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:27:49:134 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:27:49:138 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:27:49:138 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:27:49:138 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:28:03:371 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:28:03:374 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:28:03:374 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:28:03:374 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:28:53:022 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:28:53:027 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:28:53:027 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:28:53:027 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:30:09:107 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:30:09:112 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:30:09:112 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:30:09:112 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:33:39:279 [main] GameManager - Adding com.questions to the game.
-[INFO ] 2017-10-20 12:33:39:285 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:33:39:285 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:33:39:285 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 12:35:19:311 [main] GameManager - Adding questions to the game.
-[INFO ] 2017-10-20 12:35:19:315 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 12:35:19:315 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 12:35:19:315 [main] GameManager - Writing welcome message.
-[INFO ] 2017-10-20 18:37:29:924 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:927 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:928 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:929 [main] Question - Parsing questions
-[INFO ] 2017-10-20 18:37:29:929 [main] GameManager - Adding questions to the game.
-[INFO ] 2017-10-20 18:37:29:931 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 18:37:29:932 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 18:37:29:932 [main] GameManager - Writing welcome message.
-[DEBUG] 2017-10-20 18:39:39:263 [main] GameManager - 1
-[DEBUG] 2017-10-20 18:39:45:023 [main] GameManager - Is the submitted answer correct: false
-[DEBUG] 2017-10-20 18:39:45:023 [main] GameManager - Is the submitted answer the correct size: false
-[INFO ] 2017-10-20 19:08:11:889 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:890 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:891 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:892 [main] Question - Parsing questions
-[INFO ] 2017-10-20 19:08:11:892 [main] GameManager - Adding questions to the game.
-[INFO ] 2017-10-20 19:08:11:893 [main] GameManager - Adding answers to the game.
-[INFO ] 2017-10-20 19:08:11:893 [main] GameManager - Starting game engine.
-[DEBUG] 2017-10-20 19:08:11:893 [main] GameManager - Writing welcome message.
-[DEBUG] 2017-10-20 19:08:18:901 [main] GameManager - 1
-[DEBUG] 2017-10-20 19:08:21:840 [main] GameManager - Is the submitted answer correct: true
-[DEBUG] 2017-10-20 19:08:21:841 [main] GameManager - Is the submitted answer the correct size: false
-[DEBUG] 2017-10-20 19:08:26:917 [main] GameManager - Starting game over.
-[DEBUG] 2017-10-20 19:08:30:308 [main] GameManager - 7
-[DEBUG] 2017-10-20 19:08:38:376 [main] GameManager - Is the submitted answer correct: false
-[DEBUG] 2017-10-20 19:08:38:377 [main] GameManager - Is the submitted answer the correct size: true
+[TRACE] 2017-10-23 21:10:42:915 [main] FileParser - Parsing questions.
+[TRACE] 2017-10-23 21:10:42:926 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:926 [main] Converter - Converting String: The Mexican city of Tijuana borders what U.S. city?
+[TRACE] 2017-10-23 21:10:42:926 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-23 21:10:42:934 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:934 [main] Converter - Converting String: The Hoover Dam is built on what river?
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting String: Who invented the lightning rod?
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting Integer: 4
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting String: What document did the U.S. Constitution replace?
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-23 21:10:42:935 [main] Converter - Converting Integer: 5
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: What do the letters 'ZIP' stand for in the U.S. postal code?
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: U.S. Trivia
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting Integer: 6
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: What do the letters 'SCUBA' stand for?
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting Integer: 7
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: Who is the only head basketball coach to win an NCAA and NBA championship?
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting Integer: 8
+[TRACE] 2017-10-23 21:10:42:936 [main] Converter - Converting String: What is the most common thrown pitch in baseball?
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting Integer: 9
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: What are the 'Original Six' NHL teams?
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting Integer: 10
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: What's Major League Baseball's all-time home run record?
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting Integer: 11
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: What does HTTP stand for?
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-23 21:10:42:937 [main] Converter - Converting Integer: 12
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: Who invented Bitcoin?
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting Integer: 13
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: What does ROM stand for?
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting Integer: 14
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: At what company was the first electronic camera created?
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting Integer: 15
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: What do the letters 'RGB' stand for?
+[TRACE] 2017-10-23 21:10:42:938 [main] Converter - Converting String: Technology Trivia
+[INFO ] 2017-10-23 21:10:42:938 [main] GameManager - Adding questions to the game.
+[TRACE] 2017-10-23 21:10:42:939 [main] FileParser - Parsing answers.
+[TRACE] 2017-10-23 21:10:42:941 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:941 [main] Converter - Converting String: San Diego
+[TRACE] 2017-10-23 21:10:42:941 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:941 [main] Converter - Converting String: Southern California
+[TRACE] 2017-10-23 21:10:42:949 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting String: The Colorado River
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting String: Rocky Mountains
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting String: Benjamin Franklin
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting String: Founding Father
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting Integer: 4
+[TRACE] 2017-10-23 21:10:42:950 [main] Converter - Converting String: The Articles of Confederation
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Civil War
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 5
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Zone Improvement Plan
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Making areas better
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 6
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Self-Contained Underwater Breathing Apparatus
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Prolonged Swimming
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting Integer: 7
+[TRACE] 2017-10-23 21:10:42:951 [main] Converter - Converting String: Larry Brown
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: Owns a sports blog
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 8
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: Fastball
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: Take a guess
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 9
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: Boston Bruins, Chicago Blackhawks, Detroit Red Wings, Montreal Canadiens, New York Rangers, Toronto Maple Leafs
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: U.S. and Canada
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting Integer: 10
+[TRACE] 2017-10-23 21:10:42:952 [main] Converter - Converting String: 762
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: Greater than 755
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 11
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: HyperText Transfer Protocol
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: ...Protocol
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 12
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: Satoshi Nakamoto
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: Japanese
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting Integer: 13
+[TRACE] 2017-10-23 21:10:42:953 [main] Converter - Converting String: Read-only memory
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting String: Read...
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting Integer: 14
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting String: Kodak
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting String: The company no longer exists.
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting Integer: 15
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting String: Red, Green, Blue
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-23 21:10:42:954 [main] Converter - Converting String: Color Spectrum
+[INFO ] 2017-10-23 21:10:42:954 [main] GameManager - Adding answers to the game.
+[DEBUG] 2017-10-23 21:10:42:954 [main] GameManager - Writing welcome message.
+[INFO ] 2017-10-23 21:10:42:959 [main] GameManager - Starting game engine.
+[TRACE] 2017-10-25 23:17:36:103 [main] FileParser - Parsing questions.
+[TRACE] 2017-10-25 23:17:36:112 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:113 [main] Converter - Converting String: The Mexican city of Tijuana borders what U.S. city?
+[TRACE] 2017-10-25 23:17:36:113 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting String: The Hoover Dam is built on what river?
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting String: Who invented the lightning rod?
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting Integer: 4
+[TRACE] 2017-10-25 23:17:36:119 [main] Converter - Converting String: What document did the U.S. Constitution replace?
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: U.S. Tivia
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting Integer: 5
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: What do the letters 'ZIP' stand for in the U.S. postal code?
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: U.S. Trivia
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting Integer: 6
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: What do the letters 'SCUBA' stand for?
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting Integer: 7
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: Who is the only head basketball coach to win an NCAA and NBA championship?
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting Integer: 8
+[TRACE] 2017-10-25 23:17:36:120 [main] Converter - Converting String: What is the most common thrown pitch in baseball?
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting Integer: 9
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: What are the 'Original Six' NHL teams?
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting Integer: 10
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: What's Major League Baseball's all-time home run record?
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: Sports Trivia
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting Integer: 11
+[TRACE] 2017-10-25 23:17:36:121 [main] Converter - Converting String: What does HTTP stand for?
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting Integer: 12
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: Who invented Bitcoin?
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting Integer: 13
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: What does ROM stand for?
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting Integer: 14
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: At what company was the first electronic camera created?
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting String: Technology Trivia
+[TRACE] 2017-10-25 23:17:36:122 [main] Converter - Converting Integer: 15
+[TRACE] 2017-10-25 23:17:36:123 [main] Converter - Converting String: What do the letters 'RGB' stand for?
+[TRACE] 2017-10-25 23:17:36:123 [main] Converter - Converting String: Technology Trivia
+[INFO ] 2017-10-25 23:17:36:123 [main] GameManager - Adding questions to the game.
+[TRACE] 2017-10-25 23:17:36:123 [main] FileParser - Parsing answers.
+[TRACE] 2017-10-25 23:17:36:125 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:125 [main] Converter - Converting String: San Diego
+[TRACE] 2017-10-25 23:17:36:125 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:126 [main] Converter - Converting String: Southern California
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting String: The Colorado River
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting String: Rocky Mountains
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting String: Benjamin Franklin
+[TRACE] 2017-10-25 23:17:36:134 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: Founding Father
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting Integer: 4
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: The Articles of Confederation
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: Civil War
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting Integer: 5
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: Zone Improvement Plan
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: Making areas better
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting Integer: 6
+[TRACE] 2017-10-25 23:17:36:135 [main] Converter - Converting String: Self-Contained Underwater Breathing Apparatus
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Prolonged Swimming
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 7
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Larry Brown
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Owns a sports blog
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 8
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Fastball
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Take a guess
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 9
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: Boston Bruins, Chicago Blackhawks, Detroit Red Wings, Montreal Canadiens, New York Rangers, Toronto Maple Leafs
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:136 [main] Converter - Converting String: U.S. and Canada
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 10
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: 762
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: Greater than 755
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 11
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: HyperText Transfer Protocol
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: ...Protocol
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 12
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: Satoshi Nakamoto
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: Japanese
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 13
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting String: Read-only memory
+[TRACE] 2017-10-25 23:17:36:137 [main] Converter - Converting Integer: 2
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting String: Read...
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting Integer: 14
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting String: Kodak
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting Integer: 3
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting String: The company no longer exists.
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting Integer: 15
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting String: Red, Green, Blue
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting Integer: 1
+[TRACE] 2017-10-25 23:17:36:138 [main] Converter - Converting String: Color Spectrum
+[INFO ] 2017-10-25 23:17:36:138 [main] GameManager - Adding answers to the game.
+[DEBUG] 2017-10-25 23:17:36:138 [main] GameManager - Writing welcome message.
