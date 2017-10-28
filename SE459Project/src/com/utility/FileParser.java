@@ -17,7 +17,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import com.answers.Answer;
-import com.answers.Answers;
+import com.answers.IAnswers;
 import com.questions.Question;
 import com.questions.Questions;
 import com.utility.game.GameConstants;
@@ -30,7 +30,7 @@ public class FileParser {
 	private static final Logger LOG = LogManager.getLogger(FileParser.class);
 
 	private static Map<Integer, Questions> questionMap = new HashMap<>();
-	private static Map<Integer, Answers> answerMap = new HashMap<>();
+	private static Map<Integer, IAnswers> answerMap = new HashMap<>();
 	
 	private static JSONParser parser = null;
 	private static JSONArray jsonArray = null;
@@ -83,7 +83,7 @@ public class FileParser {
 	 * @param type the key of the JSON array
 	 * @return the list of answers with the associated data
 	 */
-	public static Map<Integer, Answers> getAnswerInfo(String fileName, String type) {
+	public static Map<Integer, IAnswers> getAnswerInfo(String fileName, String type) {
 		parser = new JSONParser();
 		
 		LOG.trace("Parsing answers.");
@@ -110,7 +110,7 @@ public class FileParser {
 					}	
 				}
 			} catch (Exception e) {
-				LOG.error("Error parsing Answers.json file. Message: {}", e.getMessage());
+				LOG.error("Error parsing IAnswers.json file. Message: {}", e.getMessage());
 			}
 		}
 		return answerMap;

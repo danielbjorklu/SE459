@@ -7,7 +7,7 @@ package com.answers;
  * @author olamcdaniel
  *
  */
-public class Answer implements Answers {
+public class Answer implements IAnswers {
 
 	private String answer;
 	private String hint;

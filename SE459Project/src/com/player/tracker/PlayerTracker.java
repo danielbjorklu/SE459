@@ -3,36 +3,43 @@
  */
 package com.player.tracker;
 
-import com.player.Player;
-import com.utility.tracking.GameTracker;
-
-import org.apache.logging.log4j.Logger;
-
 import java.util.HashMap;
-import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.player.Player;
+import com.score.IScore;
 
 /**
+ * Observes the players activity.
+ * 
  * @author olamcdaniel
  *
  */
-public class PlayerTracker extends GameTracker implements Player {
+public class PlayerTracker {
 
 	public static final Logger LOG = LogManager.getLogger(PlayerTracker.class);
 
-	private String playerName;
-	private String playerId;
-	private String gameId;
-	
 	private HashMap<String, String> playerTracker;
 	
+	private IScore score;
+
+	private Player player;
 	
-	PlayerTracker(String playerName, String gameId) {
-	     this.gameId = gameId;
-	     this.playerName = playerName;
+	
+	PlayerTracker(Player player) {
+		 this.player = player;
+		
+	   
+	     init();
 	}
 	
+	private void init() {
+		playerTracker = new HashMap<>();
+		
+	}
+
 	/**
 	 * Stores the players id and name for team based, single player, or one-on-one play.
 	 * 
@@ -47,44 +54,9 @@ public class PlayerTracker extends GameTracker implements Player {
 	 */
 	public HashMap<String, String> preparePlayerForTracking(Integer playerId, String playerName) {
 		
-		playerTracker.put(getPlayerId(), getPlayerName());
+		playerTracker.put(player.getPlayerId(), player.getPlayerName());
 		return playerTracker;
 		
 	}
 	
-	@Override
-	public void track() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public String getPlayerId() {
-		
-		return playerId;
-	}
-
-	@Override
-	public String getPlayerName() {
-		
-		return playerName;
-	}
-	
-	/**
-	 * Each id can only have the values: 11, 12, 13, 14, 21, 22, 23, 24.
-	 * 
-	 * @param entryCnt tracks when the player entered their information
-	 * @param teamCnt tracks the team the player is on
-	 */
-	public void generatePlayerId(Integer entryCnt, Integer teamCnt) {
-		String entry = String.valueOf(entryCnt);
-		String team = String.valueOf(teamCnt);
-		playerId = entry + team;
-	}
-
-	@Override
-	public String getGameId() {
-		
-		return gameId;
-	}
 }

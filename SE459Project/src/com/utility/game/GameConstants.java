@@ -52,4 +52,6 @@ public class GameConstants {
 	public static final String WHITESPACE = "\\s+";
 	// new line
 	public static final String NEW_LINE = "\n";
+	
+	public static final String DOUBLE_SPACE = NEW_LINE + NEW_LINE;
 }

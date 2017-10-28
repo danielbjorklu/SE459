@@ -3,19 +3,23 @@
  */
 package com.manager;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.answers.Answer;
-import com.answers.Answers;
+import com.answers.IAnswers;
+import com.player.Player;
 import com.player.tracker.PlayerTracker;
 import com.questions.Question;
 import com.questions.Questions;
+import com.team.Team;
 import com.utility.FileParser;
 import com.utility.game.GameConstants;
 import com.utility.game.GameDialogue;
@@ -26,15 +30,16 @@ import com.utility.game.GameDialogue;
  */
 public class GameManager {
 	
-	final static Logger LOG = LogManager.getLogger(GameManager.class);
 	
+	private static final Logger LOG = LogManager.getLogger(GameManager.class);
+
 	static Answer answer;
 	static Question question;
 	
 	static PlayerTracker playTracker;
 	
 	static Map<Integer, Questions> questions;
-	static Map<Integer, Answers> answers;
+	static Map<Integer, IAnswers> answers;
 	
 	static int pointTotal;
 	static int questionChoice;
@@ -45,12 +50,22 @@ public class GameManager {
 	static String questionAnswer;	
 	static String enteredName;
 	static String hint;
+	static String playerName;
+	static String gameId;
 	
 	static Scanner scanner;
 	
 	static boolean isHint;
 	static boolean playAgain;
 	static boolean isGameOver;
+	
+	static Player player;
+	static Team team;
+
+	static Integer players;
+	static Integer teams;
+	static Integer totalPlayers;
+	static Integer teamName;
 	
 	/**
 	 * Temporary method to test game functionality.
@@ -70,40 +85,158 @@ public class GameManager {
 		LOG.info("Adding answers to the game.");
 
 		welcome();	
-		teamBuilder();
+		
 		playEngine(playAgain);
 	}
 	
 	
 
 	private static void welcome() {
-		LOG.debug("Writing welcome message.");
+		
 		System.out.println(GameDialogue.WELCOME_MSG);
+		teamBuilder();
+		
+		
 	}
 	
 	private static void teamBuilder() {
-		// get players or teams
-		// assign gameId
-		System.out.println("Please enter your name: ");
-		stringScannerIn(enteredName);
+		List<Integer> list = null;
+		teams = new Integer(0);
+		players = new Integer(0);
+		enteredName = new String();
+		teamName = new Integer(0);
 		
+		setGameType(intScannerIn(teams));
 		
-		System.out.println("Hi " + enteredName);
-		System.out.println("You can play alone, against someone, or against a team. ");
-		System.out.println("Enter 1 for alone, 2 to play against someone, or 3 for a team based game: ");
-		
-		if (intScannerIn(teamChoice) == 1) {
-			playEngine(true);
-		} else if (intScannerIn(teamChoice) == 2) {
-			playEngine(true);
-		} else if (intScannerIn(teamChoice) == 3) {
+		if (getGameType() == 1) {
+			System.out.println(GameDialogue.SINGLE_PLAYER_GAME);
+			System.out.println(GameDialogue.GAME_RULES);
 			playEngine(true);
 		} else {
-			playEngine(false);
+			System.out.println(GameDialogue.TEAM_PLAYER_GAME);
+			setTotalPlayers(intScannerIn(players));
+			if (getTotalPlayers() > 1) {
+				list = new ArrayList<>();
+				for (int n = 1; n <= getTotalPlayers(); n++) {	
+			
+					System.out.println("Player " + n + " please enter your name: ");
+					setPlayerName(stringScannerIn(enteredName));
+					
+					System.out.println(getPlayerName().toUpperCase() + " please choose your team: ");
+					setTeam(intScannerIn(teamName));
+					
+					player = new Player(getPlayerName(), n, getGameType(), getPlayerName() + getTeam() + n);
+					
+					team = new Team(player, getTeam());
+					System.out.println(team.getTeamOne().size());
+					System.out.println(team.getTeamTwo().get().size());
+					
+				}
+			}	
 		}
-		
 	}
 
+	private static Integer getTeam() {
+		
+		return teamName;
+	}
+
+
+
+	private static void setTeam(int teamNm) {
+		if (teamNm == 0) {
+			System.out.println("There are only two available teams: Team1 or Team2.");
+			System.out.println("Please enter 1 for Team1 and 2 for Team2: ");
+			setGameType(intScannerIn(new Integer(0)));
+		} else if (teamNm > 2) {
+			System.out.println("There are only two available teams: Team1 or Team2.");
+			System.out.println("Please enter 1 for Team1 and 2 for Team2: ");
+			setGameType(intScannerIn(new Integer(0)));
+		} else  {
+			teamName = teamNm;
+		}
+	}
+
+
+
+	private static void setPlayerName(String player) {
+		if (StringUtils.isBlank(player)) {
+			System.out.println("The players name cannot be blank: ");
+			System.out.println("Please enter a name: ");
+			setPlayerName(stringScannerIn(player));
+		} else {
+			playerName = player;
+		}	
+	}
+
+
+
+	private static void setTotalPlayers(int players) {
+		if (players == 0) {
+			System.out.println("Please enter an amount greater than 0: ");
+			setTotalPlayers(intScannerIn(new Integer(0)));
+		} else if (players > 8) {
+			System.out.println("The maximum number of players is 8.");
+			System.out.println("Please enter a number from 1 to 8: ");
+			setTotalPlayers(intScannerIn(new Integer(0)));
+		} else {
+			totalPlayers = players;
+		}
+	}
+
+
+
+	private static void setGameType(int team) {
+		if (team == 0) {
+			System.out.println("There are only two available game types, single player or team based.");
+			System.out.println("Please enter 1 for single player and 2 for team based: ");
+			setGameType(intScannerIn(new Integer(0)));
+		} else if (team > 2) {
+			System.out.println("There are only two available game types, single player or team based.");
+			System.out.println("Please enter 1 for single player and 2 for team based: ");
+			setGameType(intScannerIn(new Integer(0)));
+		} else {
+			teamChoice = team;
+		}
+
+	}
+
+
+
+	/**
+	 * 
+	 * @param totalPlayers
+	 * @return
+	 */
+	private static Integer getTotalPlayers() {
+		
+		return totalPlayers;
+	}
+
+	/**
+	 * 
+	 * @param gameType
+	 * @return
+	 */
+	private static int getGameType() {
+		
+		return teamChoice;
+	}
+
+	/**
+	 * 
+	 * @param playerName
+	 * @return
+	 */
+	private static String getPlayerName() {
+		
+		return playerName;
+	}
+
+	/**
+	 * 
+	 * @param play
+	 */
 	private static void playEngine(boolean play) {
 		
 		LOG.info("Starting game engine.");
@@ -201,7 +334,7 @@ public class GameManager {
 			scanner = new Scanner(System.in);
 			in = scanner.nextInt();
 		} catch (InputMismatchException ime) {
-			LOG.error("Player {} entered an incorrect value. Message: {}", "NEED_TO_IMPLEMENT", ime.getMessage());
+			LOG.error("IPlayer {} entered an incorrect value. Message: {}", "NEED_TO_IMPLEMENT", ime.getMessage());
 			System.out.println("Please only enter numbers.");
 			
 		}
@@ -214,7 +347,6 @@ public class GameManager {
 			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);			
 			getQuestion(intScannerIn(questionChoice));
 
-			//isEntryValid = false;
 		} 
 		if (answerEntered <= 0) {
 			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
@@ -253,7 +385,7 @@ public class GameManager {
 				
 			pointTotal += weight;
 			LOG.info("Awarding {} points.", weight);
-			LOG.debug("Player {} has amassed {} points, exiting.", "NEED_TO_ADD", pointTotal);
+			LOG.debug("IPlayer {} has amassed {} points, exiting.", "NEED_TO_ADD", pointTotal);
 			showPointTotal();
 			// need facility to remove the question from gameplay
 			return;
@@ -349,4 +481,5 @@ public class GameManager {
 		
 		System.exit(1);
 	}
+
 }
