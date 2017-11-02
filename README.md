@@ -11,3 +11,4 @@ Need testing for everything.
 There are some comments in the code that point to things that need to be updated, though not everywhere.
 I'm sure I'm missing something.  Everyone needs to review what I've done and make updates where necessary.
 It's not a finished product, but it's pretty close.
+Update folder structure src/main/resources/...
