@@ -1,0 +1,337 @@
+[INFO ] 2017-11-01 23:17:08:861 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-01 23:17:08:874 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-01 23:17:08:885 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:17:08:885 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:17:12:982 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-01 23:17:12:982 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-01 23:17:15:193 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-01 23:17:15:193 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-01 23:17:15:194 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-01 23:17:15:196 [main] Team - Creating team 1: 
+[INFO ] 2017-11-01 23:17:15:240 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-01 23:17:15:241 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-01 23:17:15:241 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-01 23:17:17:609 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-01 23:17:17:609 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-01 23:17:17:610 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-01 23:17:17:610 [main] AnswerManager - Entered Answer lenth: 1, actual: h
+[INFO ] 2017-11-01 23:20:54:168 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-01 23:20:54:179 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-01 23:20:54:187 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:20:54:187 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:20:57:988 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-01 23:20:57:989 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-01 23:20:59:752 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-01 23:20:59:753 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-01 23:20:59:754 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-01 23:20:59:755 [main] Team - Creating team 1: 
+[INFO ] 2017-11-01 23:20:59:807 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-01 23:20:59:808 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-01 23:20:59:808 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-01 23:22:10:767 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-01 23:22:10:767 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-01 23:22:10:767 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-01 23:22:10:768 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[INFO ] 2017-11-01 23:22:24:067 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-01 23:22:24:076 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-01 23:22:24:082 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:22:24:082 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:22:28:075 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-01 23:22:28:076 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-01 23:22:29:489 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-01 23:22:29:490 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-01 23:22:29:491 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-01 23:22:29:491 [main] Team - Creating team 1: 
+[INFO ] 2017-11-01 23:22:29:530 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-01 23:22:29:531 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-01 23:22:29:531 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-01 23:22:32:244 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-01 23:22:32:244 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-01 23:22:32:244 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-01 23:22:32:245 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[INFO ] 2017-11-01 23:33:21:306 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-01 23:33:21:306 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-01 23:33:21:306 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:33:21:306 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:33:25:150 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-01 23:33:25:150 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-01 23:33:26:806 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-01 23:33:26:806 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-01 23:33:26:806 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-01 23:33:26:806 [main] Team - Creating team 1: 
+[INFO ] 2017-11-01 23:33:26:853 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-01 23:33:26:853 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-01 23:33:26:853 [main] GameManager - Starting game engine.
+[INFO ] 2017-11-01 23:34:50:606 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-01 23:34:50:621 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-01 23:34:50:621 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:34:50:621 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-01 23:34:51:934 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-01 23:34:51:934 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-01 23:34:53:215 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-01 23:34:53:215 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-01 23:34:53:215 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-01 23:34:53:215 [main] Team - Creating team 1: 
+[INFO ] 2017-11-01 23:34:53:262 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-01 23:34:53:262 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-01 23:34:53:262 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-01 23:34:56:252 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-01 23:34:56:252 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-01 23:34:56:252 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-01 23:34:56:252 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[INFO ] 2017-11-02 00:06:13:209 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:06:13:225 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:06:13:241 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:06:13:241 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:06:17:460 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:06:17:460 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:06:19:235 [main] Player - New Player Added. Name = o Team = 1: 
+[INFO ] 2017-11-02 00:06:19:235 [main] Player - Generated playerId 11 for o: 
+[INFO ] 2017-11-02 00:06:19:235 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:06:19:235 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:06:19:297 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:06:19:297 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:06:19:297 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:06:41:960 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:06:41:960 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:06:41:960 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:06:41:960 [main] AnswerManager - Entered Answer lenth: 1, actual: t
+[INFO ] 2017-11-02 00:07:23:453 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:07:23:469 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:07:23:469 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:07:23:469 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:07:46:093 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:07:46:093 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:07:47:695 [main] Player - New Player Added. Name = o Team = 1: 
+[INFO ] 2017-11-02 00:07:47:695 [main] Player - Generated playerId 11 for o: 
+[INFO ] 2017-11-02 00:07:47:710 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:07:47:710 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:07:47:757 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:07:47:757 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:07:47:757 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:07:56:694 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:07:56:694 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:07:56:694 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:07:56:694 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[INFO ] 2017-11-02 00:08:37:907 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:08:37:907 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:08:37:922 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:08:37:922 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:08:40:734 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:08:40:734 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:08:42:269 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:08:42:269 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:08:42:269 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:08:42:269 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:08:42:316 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:08:42:316 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:08:42:316 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:08:45:100 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:08:45:100 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:08:45:100 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:08:45:100 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[DEBUG] 2017-11-02 00:10:17:548 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:10:17:548 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:10:26:399 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:10:26:399 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:10:26:399 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:10:26:399 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:10:26:399 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:10:26:399 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:10:26:402 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[INFO ] 2017-11-02 00:12:53:562 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:12:53:577 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:12:53:577 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:12:53:577 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:13:24:765 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:13:24:765 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:13:28:324 [main] Player - New Player Added. Name = o Team = 1: 
+[INFO ] 2017-11-02 00:13:28:324 [main] Player - Generated playerId 11 for o: 
+[INFO ] 2017-11-02 00:13:28:324 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:13:28:324 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:13:28:371 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:13:28:371 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:13:28:371 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:13:39:035 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:13:39:035 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:13:39:035 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:13:39:035 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:13:39:035 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:13:39:035 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:13:39:048 [main] AnswerManager - O has amassed 1 points, exiting.
+[INFO ] 2017-11-02 00:14:39:902 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:14:39:918 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:14:39:918 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:14:39:918 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:14:43:129 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:14:43:129 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:14:44:751 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:14:44:751 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:14:44:751 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:14:44:751 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:14:44:798 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:14:44:798 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:14:44:798 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:14:51:307 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:14:51:307 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:14:51:307 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:14:51:307 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:14:51:307 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:14:51:307 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:14:51:317 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:15:02:801 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:15:02:801 [main] GameManager - Starting game engine.
+[INFO ] 2017-11-02 00:15:17:423 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:15:17:423 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:15:17:439 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:15:17:439 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:15:19:300 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:15:19:300 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:15:20:821 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:15:20:821 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:15:20:821 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:15:20:821 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:15:20:868 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:15:20:868 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:15:20:868 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:15:39:452 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:15:44:814 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:15:55:371 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:15:56:374 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:16:05:485 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:16:10:652 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:16:16:643 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[INFO ] 2017-11-02 00:16:41:236 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:16:41:236 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:16:41:251 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:16:41:251 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:16:43:204 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:16:43:204 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:16:45:488 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:16:45:488 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:16:45:488 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:16:45:488 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:16:45:535 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:16:45:535 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:16:45:535 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:16:50:907 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:16:50:907 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:16:50:907 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:16:50:907 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:16:50:907 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:16:50:907 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:16:50:907 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:16:53:136 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:16:53:136 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:16:57:027 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:16:57:027 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:16:57:027 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:16:57:027 [main] AnswerManager - Entered Answer lenth: 1, actual: t
+[INFO ] 2017-11-02 00:19:39:298 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:19:39:314 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:19:39:314 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:19:39:330 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:19:48:742 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:19:48:742 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:19:48:758 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:19:48:758 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:19:51:592 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:19:51:592 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:19:54:239 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:19:54:239 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:19:54:254 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:19:54:254 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:19:54:285 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:19:54:285 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:19:54:285 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:20:00:903 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:20:00:903 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:20:00:903 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:20:00:918 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:20:00:918 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:20:00:918 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:20:00:918 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:20:03:148 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:20:03:148 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:20:14:303 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:20:14:303 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:20:14:303 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:20:14:303 [main] AnswerManager - Entered Answer lenth: 3, actual: the
+[INFO ] 2017-11-02 00:21:11:012 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:21:11:027 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:21:11:027 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:21:11:027 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:21:12:904 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:21:12:904 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:21:14:398 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:21:14:398 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:21:14:398 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:21:14:398 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:21:14:429 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:21:14:429 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:21:14:429 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:21:17:010 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:21:17:010 [main] AnswerManager - Is the submitted answer the correct size: false
+[DEBUG] 2017-11-02 00:21:17:010 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:21:17:025 [main] AnswerManager - Entered Answer lenth: 1, actual: t
+[DEBUG] 2017-11-02 00:21:24:212 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:21:24:212 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:21:24:212 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:21:24:212 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:21:24:212 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:21:24:212 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:21:24:212 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:21:26:290 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:21:26:290 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:21:37:879 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:21:37:879 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:21:37:879 [main] AnswerManager - Stored Answer length: 16, actual: BenjaminFranklin
+[DEBUG] 2017-11-02 00:21:37:879 [main] AnswerManager - Entered Answer lenth: 16, actual: benjaminfranklin
+[INFO ] 2017-11-02 00:21:37:879 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:21:37:879 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:21:37:895 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:21:40:149 [main] GameUtils - 11 has chosen to quit the game.
+[INFO ] 2017-11-02 00:23:24:316 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:23:24:331 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:23:24:331 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:23:24:331 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:23:25:790 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:23:25:790 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:23:30:832 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:23:30:832 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:23:30:832 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:23:30:832 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:23:30:864 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:23:30:864 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:23:30:864 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:23:36:484 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:23:36:484 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:23:36:484 [main] AnswerManager - Stored Answer length: 8, actual: Fastball
+[DEBUG] 2017-11-02 00:23:36:484 [main] AnswerManager - Entered Answer lenth: 8, actual: fastball
+[INFO ] 2017-11-02 00:23:36:484 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:23:36:484 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:23:36:484 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:23:38:600 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:23:38:600 [main] GameManager - Starting game engine.
+[INFO ] 2017-11-02 00:25:58:708 [main] QuestionManager - Adding answers to the game.
+[INFO ] 2017-11-02 00:25:58:708 [main] QuestionManager - Adding questions to the game.
+[INFO ] 2017-11-02 00:25:58:739 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:25:58:739 [main] GameTrackingFacade - Registering game tracker...
+[INFO ] 2017-11-02 00:26:01:485 [main] GameManager -  Game type 1 for single player 2 for team 1: 
+[INFO ] 2017-11-02 00:26:01:485 [main] GameManager - ...Starting single player game...
+[INFO ] 2017-11-02 00:26:03:423 [main] Player - New Player Added. Name = ola Team = 1: 
+[INFO ] 2017-11-02 00:26:03:423 [main] Player - Generated playerId 11 for ola: 
+[INFO ] 2017-11-02 00:26:03:423 [main] PlayerDAO - New Player created 11: 
+[INFO ] 2017-11-02 00:26:03:423 [main] Team - Creating team 1: 
+[INFO ] 2017-11-02 00:26:03:470 [main] TeamDAO - Team one created with 1 players: 
+[INFO ] 2017-11-02 00:26:03:470 [main] TeamDAO - Team two created with 0 players: 
+[INFO ] 2017-11-02 00:26:03:470 [main] GameManager - Starting game engine.
+[DEBUG] 2017-11-02 00:26:09:790 [main] AnswerManager - Is the submitted answer correct: true
+[DEBUG] 2017-11-02 00:26:09:790 [main] AnswerManager - Is the submitted answer the correct size: true
+[DEBUG] 2017-11-02 00:26:09:790 [main] AnswerManager - Stored Answer length: 16, actual: TheColoradoRiver
+[DEBUG] 2017-11-02 00:26:09:790 [main] AnswerManager - Entered Answer lenth: 16, actual: thecoloradoriver
+[INFO ] 2017-11-02 00:26:09:790 [main] AnswerManager - Correct answer entered.
+[INFO ] 2017-11-02 00:26:09:790 [main] AnswerManager - Awarding 1 points.
+[DEBUG] 2017-11-02 00:26:09:790 [main] AnswerManager - OLA has amassed 1 points, exiting.
+[DEBUG] 2017-11-02 00:26:11:603 [main] GameUtils - Starting game over.
+[INFO ] 2017-11-02 00:26:11:603 [main] GameManager - Starting game engine.
