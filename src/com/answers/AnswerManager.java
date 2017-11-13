@@ -64,7 +64,6 @@ public class AnswerManager {
 			// remove question from the set of questions for this player
 			// each player/team will need to have a question bucket for right and wrong questions
 			// can use the question index as the key
-			GameManager.continuePlay();
 		} else {
 			isCorrectAnswer = false;
 			

@@ -163,6 +163,7 @@ public class GameManager {
 	private static void teamMode() {
 		System.out.println(GameDialogue.TEAM_PLAYER_GAME);
 		setTotalPlayers(gameUtils.intScannerIn(players));
+		// TODO: Handle when 1 total player is entered?
 		if (getTotalPlayers() > 1) {
 			
 			for (int n = 1; n <= getTotalPlayers(); n++) {	
@@ -251,8 +252,16 @@ public class GameManager {
 			getQuestion(gameUtils.intScannerIn(questionChoice));
 			//randomQuestion.getRandQuestion().getQuestion();
 			
+			// TODO: Does the answer manager object need to be created every time?
 			answerManager = new AnswerManager(answer, player);
 			answerManager.checkAnswer(gameUtils.stringScannerIn(questionAnswer));
+			
+			// Mark the question as correct to remove from the question pool
+			if (answerManager.isAnswer()) {
+				questionManager.setCorrectQuestion(player, question.getQuestionIndex());
+			}
+			
+			continuePlay();
 
 		}
 	}
@@ -268,24 +277,13 @@ public class GameManager {
 	}
 
 	private static void showPointTotal() {
-		// TODO point total shouldn't be an instance variable, it should come from a Score object
-		if (pointTotal == 1) {
-			System.out.println(
-					GameConstants.NEW_LINE 
-					+ GameDialogue.CURRENT_POINT_TOTAL 
-					+ pointTotal 
-					+ GameDialogue.POINT
-					+ GameConstants.NEW_LINE
-					);
-		} else {
-			System.out.println(
-					GameConstants.NEW_LINE 
-					+ GameDialogue.CURRENT_POINT_TOTAL 
-					+ pointTotal 
-					+ GameDialogue.POINTS
-					+ GameConstants.NEW_LINE
-					);
-		}
+		System.out.println(
+				GameConstants.NEW_LINE 
+				+ GameDialogue.CURRENT_POINT_TOTAL 
+				+ player.getPlayerScore()
+				+ GameDialogue.POINTS
+				+ GameConstants.NEW_LINE
+				);
 	}
 
 	private static void getQuestion(int answerEntered) {
@@ -293,12 +291,23 @@ public class GameManager {
 			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
 			getQuestion(gameUtils.intScannerIn(questionChoice));
 
+		}
+		else if (questionManager.hasAnsweredQuestion(player, answerEntered)) {
+			System.out.println(GameDialogue.QUESTION_ALREADY_ANSWERED);
+			getQuestion(gameUtils.intScannerIn(questionChoice));
 		} else {
 			System.out.println("Setting up question..." + GameConstants.NEW_LINE);
-			question = questions.get(answerEntered);
-			answer = answers.get(answerEntered);
+			// Since the questions are zero indexed, decrement the input by one
+			question = questions.get(answerEntered - 1);
+			answer = answers.get(answerEntered - 1);
 			weight = answer.getAnswerWeight();
 			
+			// Alter the prompt for grammar depending on number of points.
+			if (weight > 1) {
+				System.out.println(GameDialogue.QUESTION_INITIAL_WEIGHT + Integer.toString(weight) + GameDialogue.POINTS);
+			} else { 
+				System.out.println(GameDialogue.QUESTION_INITIAL_WEIGHT + Integer.toString(weight) + GameDialogue.POINT);
+			}
 			System.out.println(question.getQuestion());
 			System.out.println(GameDialogue.ENTERED_ANSWER);
 		}

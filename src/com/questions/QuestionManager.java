@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.answers.IAnswers;
+import com.player.Player;
 import com.utility.FileParser;
 import com.utility.game.GameConstants;
 
@@ -95,11 +96,20 @@ public class QuestionManager {
 	 * 
 	 * @param correctQuestion
 	 */
-	public void setCorrectQuestion(Integer correctQuestion) {
+	public void setCorrectQuestion(Player player, Integer correctQuestion) {
 		this.correctQuestion = correctQuestion;
-		correctQuestions.add(correctQuestion);
+		player.getAnsweredQuestions().add(correctQuestion);
 	}
 	
+	/**
+	 * @param the answer set for a given player
+	 * @param question
+	 * @return if the question is correct
+	 */
+	public boolean hasAnsweredQuestion(Player player, int question) {
+		LOG.debug("isCorrect: " + String.valueOf(player.getAnsweredQuestions().contains(question)));
+		return player.getAnsweredQuestions().contains(question);
+	}
 	
 	/**
 	 * @return the size of the question queue

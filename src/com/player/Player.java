@@ -4,6 +4,9 @@
 package com.player;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,6 +30,8 @@ public class Player implements IPlayer {
 	private String playerId;
 	
 	private PlayerDAO playerDAO;
+	
+	private List<Integer> answeredQuestions;
 	
 	
 	/**
@@ -56,6 +61,7 @@ public class Player implements IPlayer {
 			LOG.info("New Player Added. Name = {} Team = {}: ", playerName, teamNumber);
 			generatePlayerId(entryPoint, teamNumber);
 		}
+		answeredQuestions = new ArrayList<Integer>();
 		storePlayers(this);
 	}
 
@@ -100,11 +106,15 @@ public class Player implements IPlayer {
 	 * @param teamCnt tracks the team the player is on
 	 */
 	private void generatePlayerId(Integer entryPoint, Integer teamCnt) {
-		String entry = String.valueOf(entryPoint);
-		String team = String.valueOf(teamCnt);
-		playerId = entry + team;
+		try {
+			String entry = String.valueOf(entryPoint);
+			String team = String.valueOf(teamCnt);
+			playerId = entry + team;
 		
-		LOG.info("Generated playerId {} for {}: ", playerId, playerName);
+			LOG.info("Generated playerId {} for {}: ", playerId, playerName);
+		} catch (IllegalArgumentException ex) {
+			LOG.error("An invalid parameter was provided.");
+		}
 	}
 
 
@@ -120,6 +130,11 @@ public class Player implements IPlayer {
 	public void trackPlayer(IPlayer iPlayer) {
 		System.out.println("Player " + iPlayer.getPlayerName() +  " tracked ");
 		
+	}
+	
+	@Override
+	public List<Integer> getAnsweredQuestions() {
+		return answeredQuestions;
 	}
 
 

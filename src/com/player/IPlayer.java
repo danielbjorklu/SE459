@@ -3,6 +3,8 @@
  */
 package com.player;
 
+import java.util.List;
+
 import com.utility.tracking.IPlayerTracker;
 
 /**
@@ -47,5 +49,12 @@ public interface IPlayer extends IPlayerTracker {
 	 */
 	Integer buildPlayerScore(Integer score);
 	
+	
+	/**
+	 * A List of question ids the player has answered
+	 * 
+	 * @return list of question ids answered
+	 */
+	List<Integer> getAnsweredQuestions();
 
 }
