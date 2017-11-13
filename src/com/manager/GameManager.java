@@ -153,7 +153,8 @@ public class GameManager {
 				GameConstants.ONE, 
 				getGameType(),
 				gameId);
-		team = new Team(player, getTeam());
+		team = new Team();
+		team.setPlayer(player, getTeam());
 		System.out.println(GameDialogue.GAME_RULES);
 	}
 	
