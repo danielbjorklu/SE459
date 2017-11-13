@@ -53,6 +53,7 @@ public class GameDialogue {
 	public static final String FINAL_POINT_TOTAL = "You finished the game with ";
 	public static final String POINTS_REMAINING = "Points remaining for this question = "; 
 	public static final String QUESTION_INITIAL_WEIGHT = "This question is worth ";
+	public static final String QUESTION_ALREADY_ANSWERED = "This question has already been answered. Please pick a different question.";
 	
 	public static final String INCORRECT_HINT_ANSWER = 
 			hintSB.append("Your answer is incorrect.")

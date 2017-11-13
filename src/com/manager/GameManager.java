@@ -163,6 +163,7 @@ public class GameManager {
 	private static void teamMode() {
 		System.out.println(GameDialogue.TEAM_PLAYER_GAME);
 		setTotalPlayers(gameUtils.intScannerIn(players));
+		// TODO: Handle when 1 total player is entered?
 		if (getTotalPlayers() > 1) {
 			
 			for (int n = 1; n <= getTotalPlayers(); n++) {	
@@ -251,8 +252,16 @@ public class GameManager {
 			getQuestion(gameUtils.intScannerIn(questionChoice));
 			//randomQuestion.getRandQuestion().getQuestion();
 			
+			// TODO: Does the answer manager object need to be created every time?
 			answerManager = new AnswerManager(answer, player);
 			answerManager.checkAnswer(gameUtils.stringScannerIn(questionAnswer));
+			
+			// Mark the question as correct to remove from the question pool
+			if (answerManager.isAnswer()) {
+				questionManager.setCorrectQuestion(player, question.getQuestionIndex());
+			}
+			
+			continuePlay();
 
 		}
 	}
@@ -282,6 +291,10 @@ public class GameManager {
 			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
 			getQuestion(gameUtils.intScannerIn(questionChoice));
 
+		}
+		else if (questionManager.hasAnsweredQuestion(player, answerEntered)) {
+			System.out.println(GameDialogue.QUESTION_ALREADY_ANSWERED);
+			getQuestion(gameUtils.intScannerIn(questionChoice));
 		} else {
 			System.out.println("Setting up question..." + GameConstants.NEW_LINE);
 			// Since the questions are zero indexed, decrement the input by one
