@@ -163,9 +163,9 @@ public class GameManager {
 	private static void teamMode() {
 		System.out.println(GameDialogue.TEAM_PLAYER_GAME);
 		setTotalPlayers(gameUtils.intScannerIn(players));
-		// TODO: Handle when 1 total player is entered?
+		
 		if (getTotalPlayers() > 1) {
-			
+			team = new Team();
 			for (int n = 1; n <= getTotalPlayers(); n++) {	
 		
 				LOG.debug("Total Players iterator {}:", n);
@@ -175,13 +175,14 @@ public class GameManager {
 				System.out.println(getPlayerName().toUpperCase() + " please choose your team: ");
 				setTeam(gameUtils.intScannerIn(teamName));
 				
-				player = new Player(getPlayerName(), n, getGameType(), getPlayerName() + getTeam() + n);
+				player = new Player(getPlayerName(), n, getTeam(), getPlayerName() + getTeam() + n);
 				
 				gtf.updatePlayers(player);
 				
-				team = new Team(player, getTeam());					
+				team.setPlayer(player, getTeam());					
 			}
 			
+			team.listTeams();
 			gtf.updateTeams(team.getTeamBuilder().getBuiltTeams());
 		}
 	}
