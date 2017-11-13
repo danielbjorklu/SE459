@@ -268,24 +268,13 @@ public class GameManager {
 	}
 
 	private static void showPointTotal() {
-		// TODO point total shouldn't be an instance variable, it should come from a Score object
-		if (pointTotal == 1) {
-			System.out.println(
-					GameConstants.NEW_LINE 
-					+ GameDialogue.CURRENT_POINT_TOTAL 
-					+ pointTotal 
-					+ GameDialogue.POINT
-					+ GameConstants.NEW_LINE
-					);
-		} else {
-			System.out.println(
-					GameConstants.NEW_LINE 
-					+ GameDialogue.CURRENT_POINT_TOTAL 
-					+ pointTotal 
-					+ GameDialogue.POINTS
-					+ GameConstants.NEW_LINE
-					);
-		}
+		System.out.println(
+				GameConstants.NEW_LINE 
+				+ GameDialogue.CURRENT_POINT_TOTAL 
+				+ player.getPlayerScore()
+				+ GameDialogue.POINTS
+				+ GameConstants.NEW_LINE
+				);
 	}
 
 	private static void getQuestion(int answerEntered) {
@@ -295,10 +284,17 @@ public class GameManager {
 
 		} else {
 			System.out.println("Setting up question..." + GameConstants.NEW_LINE);
-			question = questions.get(answerEntered);
-			answer = answers.get(answerEntered);
+			// Since the questions are zero indexed, decrement the input by one
+			question = questions.get(answerEntered - 1);
+			answer = answers.get(answerEntered - 1);
 			weight = answer.getAnswerWeight();
 			
+			// Alter the prompt for grammar depending on number of points.
+			if (weight > 1) {
+				System.out.println(GameDialogue.QUESTION_INITIAL_WEIGHT + Integer.toString(weight) + GameDialogue.POINTS);
+			} else { 
+				System.out.println(GameDialogue.QUESTION_INITIAL_WEIGHT + Integer.toString(weight) + GameDialogue.POINT);
+			}
 			System.out.println(question.getQuestion());
 			System.out.println(GameDialogue.ENTERED_ANSWER);
 		}

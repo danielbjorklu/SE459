@@ -86,8 +86,7 @@ public class Team implements ITeam {
 	
 	@Override
 	public Integer getTeamId() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.teamId;
 	}
 	@Override
 	public HashMap<String, IPlayer> getTeamOne() {
