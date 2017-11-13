@@ -71,6 +71,7 @@ public class HintManager  {
 			System.out.println(GameConstants.NEW_LINE + "Please enter your answer: ");
 			processHint(gameUtils.stringScannerIn(enteredAnswer), weight);
 		} else {
+			System.out.println(GameDialogue.CONTINUE_PLAY);
 			gameUtils.keepPlaying(
 					gameUtils.stringScannerIn(enteredAnswer), iPlayer);
 		}
