@@ -1,17 +1,17 @@
 {"answers":[
 	{"index":1, "answer":"Daily Scrum", "weight":1, "hint":"Usually held frequently"},
-	{"index":17, "answer":"Velocity", "weight":1, "hint":"Related to speed"},
-	{"index":18, "answer":"Burndown Chart", "weight":2, "hint":"Usually shown as a graph"}
-	{"index":19, "answer":"Persona", "weight":2, "hint":"Another name for an actor's role"},
-	{"index":20, "answer":"Iteration", "weight":1, "hint":"A new version of software"},
-	{"index":21, "answer":"Increment", "weight":1, "hint":"An increase"},
-	{"index":22, "answer":"Spiral", "weight":2, "hint":"Continuous winding"},
-	{"index":23, "answer":"Listening", "weight":3, "hint":"Giving attention to"},
-	{"index":24, "answer":"Product Owner", "weight":3, "hint":"This is a key stakeholder"},
-	{"index":25, "answer":"ScrumMaster", "weight":3, "hint":"The facilitator of an agile team"},
-	{"index":26, "answer":"Product Backlog", "weight":2, "hint":"Task to work are pulled from here"},
-	{"index":27, "answer":"Sprint Backlog", "weight":2, "hint":"Task to complete"},
-	{"index":28, "answer":"Sprint", "weight":1, "hint":"A time-box for when a useable product is created"},
-	{"index":29, "answer":"Retrospective", "weight":2, "hint":"Looking back on past events"},
-	{"index":30, "answer":"User stories", "weight":2, "hint":"A very high-level definition"}
+	{"index":2, "answer":"Velocity", "weight":1, "hint":"Related to speed"},
+	{"index":3, "answer":"Burndown Chart", "weight":2, "hint":"Usually shown as a graph"},
+	{"index":4, "answer":"Persona", "weight":2, "hint":"Another name for an actor's role"},
+	{"index":5, "answer":"Iteration", "weight":1, "hint":"A new version of software"},
+	{"index":6, "answer":"Increment", "weight":1, "hint":"An increase"},
+	{"index":7, "answer":"Spiral", "weight":2, "hint":"Continuous winding"},
+	{"index":8, "answer":"Listening", "weight":3, "hint":"Giving attention to"},
+	{"index":9, "answer":"Product Owner", "weight":3, "hint":"This is a key stakeholder"},
+	{"index":10, "answer":"ScrumMaster", "weight":3, "hint":"The facilitator of an agile team"},
+	{"index":11, "answer":"Product Backlog", "weight":2, "hint":"Task to work are pulled from here"},
+	{"index":12, "answer":"Sprint Backlog", "weight":2, "hint":"Task to complete"},
+	{"index":13, "answer":"Sprint", "weight":1, "hint":"A time-box for when a useable product is created"},
+	{"index":14, "answer":"Retrospective", "weight":2, "hint":"Looking back on past events"},
+	{"index":15, "answer":"User stories", "weight":2, "hint":"A very high-level definition"}
 ]}
