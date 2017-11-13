@@ -123,12 +123,7 @@ public class GameManager {
 	}
 
 	private static void setGameType(int team) {
-		if (team == 0) {
-			System.out.println("There are only two available game types, single player or team based.");
-			System.out.println("Please enter 1 for single player and 2 for team based: ");
-			
-			setGameType(gameUtils.intScannerIn(new Integer(0)));
-		} else if (team > 2) {
+		if (team <= 0 || team > 2) {
 			System.out.println("There are only two available game types, single player or team based.");
 			System.out.println("Please enter 1 for single player and 2 for team based: ");
 			
@@ -196,11 +191,7 @@ public class GameManager {
 	}
 
 	private static void setTeam(int teamNm) {
-		if (teamNm == 0) {
-			System.out.println("There are only two available teams: Team1 or Team2.");
-			System.out.println("Please enter 1 for Team1 and 2 for Team2: ");
-			setGameType(gameUtils.intScannerIn(new Integer(0)));
-		} else if (teamNm > 2) {
+		if (teamNm <= 0 || teamNm > 2) {
 			System.out.println("There are only two available teams: Team1 or Team2.");
 			System.out.println("Please enter 1 for Team1 and 2 for Team2: ");
 			setGameType(gameUtils.intScannerIn(new Integer(0)));
@@ -220,7 +211,7 @@ public class GameManager {
 	}
 
 	private static void setTotalPlayers(int players) {
-		if (players == 0) {
+		if (players <= 0) {
 			System.out.println("Please enter an amount greater than 0: ");
 			setTotalPlayers(gameUtils.intScannerIn(new Integer(0)));
 		} else if (players > 8) {
@@ -298,13 +289,7 @@ public class GameManager {
 	}
 
 	private static void getQuestion(int answerEntered) {
-		
-		if (answerEntered > questions.size()) {
-			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);			
-			getQuestion(gameUtils.intScannerIn(questionChoice));
-
-		} 
-		if (answerEntered <= 0) {
+		if (answerEntered <= 0 || answerEntered > questions.size()) {
 			System.out.println(GameDialogue.WRONG_NUMBER_SIZE);
 			getQuestion(gameUtils.intScannerIn(questionChoice));
 
@@ -316,7 +301,6 @@ public class GameManager {
 			
 			System.out.println(question.getQuestion());
 			System.out.println(GameDialogue.ENTERED_ANSWER);
-
 		}
 	}
 	
