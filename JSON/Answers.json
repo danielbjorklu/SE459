@@ -13,15 +13,15 @@
 	{"index":12, "answer":"Sprint Backlog", "weight":2, "hint":"Task to complete"},
 	{"index":13, "answer":"Sprint", "weight":1, "hint":"A time-box for when a useable product is created"},
 	{"index":14, "answer":"Retrospective", "weight":2, "hint":"Looking back on past events"},
-	{"index":15, "answer":"User stories", "weight":2, "hint":"A very high-level definition"}
-	{"index":16, "answer":"Japan", "weight":1, "hint":"East"}
-	{"index":17, "answer":"Uzbekistan", "weight":2, "hint":"Uzbeki..."}
-	{"index":18, "answer":"Seven", "weight":2, "hint":"The max number"}
-	{"index":19, "answer":"Texas", "weight":2, "hint":"Souther state"}
-	{"index":20, "answer":"2009", "weight":2, "hint":"Some time 2005-2010"}
-	{"index":21, "answer":"Chairman of the Federal Reserve", "weight":2, "hint":"Chairman of the Federal Res..."}
-	{"index":22, "answer":"Vietnam", "weight":2, "hint":"War from November 1, 1955 – April 30, 1975"}
-	{"index":23, "answer":"Belgium", "weight":2, "hint":"Type of chocolate"}
-	{"index":24, "answer":"Fake news", "weight":2, "hint":"News that is not real"}
+	{"index":15, "answer":"User stories", "weight":2, "hint":"A very high-level definition"},
+	{"index":16, "answer":"Japan", "weight":1, "hint":"East"},
+	{"index":17, "answer":"Uzbekistan", "weight":2, "hint":"Uzbeki..."},
+	{"index":18, "answer":"Seven", "weight":2, "hint":"The max number"},
+	{"index":19, "answer":"Texas", "weight":2, "hint":"Souther state"},
+	{"index":20, "answer":"2009", "weight":2, "hint":"Some time 2005-2010"},
+	{"index":21, "answer":"Chairman of the Federal Reserve", "weight":2, "hint":"Chairman of the Federal Res..."},
+	{"index":22, "answer":"Vietnam", "weight":2, "hint":"War from November 1, 1955 – April 30, 1975"},
+	{"index":23, "answer":"Belgium", "weight":2, "hint":"Type of chocolate"},
+	{"index":24, "answer":"Fake news", "weight":2, "hint":"News that is not real"},
 	{"index":25, "answer":" U.S.", "weight":2, "hint":"Where is NY located"}
 ]}
