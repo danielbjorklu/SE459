@@ -1,4 +1,6 @@
 # SE459
+[![Build Status](https://travis-ci.org/danielbjorklu/SE459.svg?branch=master)](https://travis-ci.org/danielbjorklu/SE459)
+
 TODO:
 
 * Scoring is buggy after refactoring.  Someone needs to go through and fix it.
